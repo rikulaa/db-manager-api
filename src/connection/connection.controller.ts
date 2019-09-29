@@ -53,6 +53,6 @@ export class ConnectionController {
 
   @Get(':connectionId/tables')
   async showTables(@Param('connectionId') id : number): Promise<any> {
-    return await this.connectionsService.deleteSingle(id);
+    return await this.connectionsService.getSingle(id);
   }
 }
