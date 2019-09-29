@@ -5,6 +5,9 @@ export class Create {
   readonly name: string;
 
   @IsString()
+  readonly type: string;
+
+  @IsString()
   readonly host: string;
 
   @IsInt()

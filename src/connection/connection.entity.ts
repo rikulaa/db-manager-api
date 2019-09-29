@@ -9,6 +9,9 @@ export class Connection {
     name: string;
 
     @Column('text')
+    type: string;
+
+    @Column('text')
     host: string;
 
     @Column({nullable: true})
